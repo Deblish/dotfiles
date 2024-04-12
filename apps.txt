@@ -1,0 +1,17 @@
+#xargs brew install < apps.txt
+discord
+spotify
+zoom
+visual-studio-code
+github
+sublime-text
+google-chrome
+homebrew/cask-versions/firefox-developer-edition
+arc
+iterm2
+monitorcontrol
+stats
+keyboardcleantool
+keycastr
+hidden-bar
+keka
