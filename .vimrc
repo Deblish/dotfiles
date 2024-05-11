@@ -8,6 +8,7 @@ set ruler
 set list
 set listchars=tab:>-
 syntax on
+set mouse=
 
 " Enhance comment formatting
 set formatoptions+=r
