@@ -9,6 +9,9 @@ set list
 set listchars=tab:>-
 syntax on
 set mouse=
+set hlsearch
+"set colorcolumn=81
+"highlight ColorColumn ctermbg=lightBlue
 
 " Enhance comment formatting
 set formatoptions+=r
@@ -34,7 +37,7 @@ function! InsertFunctionComment()
 endfunction
 
 " Map a key to insert the function comment template
-nnoremap <leader>fc :call InsertFunctionComment()<CR>
+nnoremap <F2> :call InsertFunctionComment()<CR>
 
 " Map Ctrl-c to toggle comment visibility
 nnoremap <C-c> :set invlist<CR>
