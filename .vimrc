@@ -1,4 +1,8 @@
-" General Vim settings
+" stdheader settings
+let $USER = 'aapadill'
+let $MAIL = $USER . '@student.hive.fi'
+
+" general Vim settings
 set number
 set relativenumber
 set tabstop=4
@@ -10,14 +14,17 @@ set listchars=tab:>-
 syntax on
 set mouse=
 set hlsearch
+set cursorline
+":colorscheme gruvbox
+
 "set colorcolumn=81
 "highlight ColorColumn ctermbg=lightBlue
 
-" Enhance comment formatting
+" enhance comment formatting
 set formatoptions+=r
 set comments=sr:/*,mb:*,ex:*/,b:**
 
-" Define comment leaders for automatic formatting, adjusting the configuration for comments
+" define comment leaders for automatic formatting, adjusting the configuration for comments
 au BufNewFile,BufRead * set comments=sr:/*,mb:*,ex:*/,b:**
 
 function! InsertFunctionComment()
@@ -36,8 +43,8 @@ function! InsertFunctionComment()
   call cursor(current_line + 3, 999)  " Moves the cursor to the end of the 'Function description.' line
 endfunction
 
-" Map a key to insert the function comment template
+" map a key to insert the function comment template
 nnoremap <F2> :call InsertFunctionComment()<CR>
 
-" Map Ctrl-c to toggle comment visibility
+" map Ctrl-c to toggle comment visibility
 nnoremap <C-c> :set invlist<CR>
